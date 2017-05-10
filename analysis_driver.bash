@@ -36,3 +36,9 @@ tar xvzf Trainset14_032015.pds.tgz trainset14_032015.pds/trainset14_032015.pds.*
 mv trainset14_032015.pds/* data/references/
 rmdir trainset14_032015.pds
 rm Trainset14_032015.pds.tgz
+
+# Run mock community data through mothur to calculate the sequencing error rates
+code/mothur/mothur code/get_error.batch
+
+# Run mock community data through mothur to calculate the sequencing error rates
+code/mothur/mothur code/get_shared_otus.batch
